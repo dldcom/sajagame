@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사자성어 대탈출</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="game-container"></div>
+    <div id="ui-layer">
+
+        <!-- Controls Hint -->
+        <div id="controls-hint">
+            이동: WASD / 화살표<br>
+            상호작용/던지기: SPACE
+        </div>
+
+        <!-- Dialogue Box -->
+        <div id="dialogue-box" class="hidden">
+            <div class="dialogue-header">
+                <span id="speaker-name">주인공</span>
+            </div>
+            <p id="dialogue-text">내용이 여기에 나옵니다.</p>
+            <div class="dialogue-footer">SPACE를 눌러 계속</div>
+        </div>
+
+        <!-- Quiz UI -->
+        <div id="quiz-container" class="hidden">
+            <div class="quiz-box">
+                <h2 class="quiz-question">Q. 하나의 돌로 두 마리의 새를 잡는다는 말로,<br>적은 노력으로 큰 성과를 거두는 경우를 일컫는 말은?</h2>
+                <div class="quiz-options">
+                    <div class="option" data-index="0">1. 일석이조</div>
+                    <div class="option" data-index="1">2. 전화위복</div>
+                    <div class="option" data-index="2">3. 일희일비</div>
+                    <div class="option" data-index="3">4. 석고대죄</div>
+                </div>
+                <div class="quiz-footer">화살표(↑/↓)로 선택, SPACE로 확정</div>
+            </div>
+        </div>
+
+    </div>
+    <script type="module" src="src/main.js"></script>
+</body>
+
+</html>
